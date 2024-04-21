@@ -13,4 +13,10 @@ class ReverseWordsSolutionTest {
 		assertEquals("elbuod  decaps  sdrow", ReverseWordsSolution.reverseWords("double  spaced  words"));
 	}
 
+	@Test
+	public void inputHasOnlyWhitespaces() {
+		assertEquals("    ", ReverseWordsSolution.reverseWords("    "));
+
+	}
+
 }
