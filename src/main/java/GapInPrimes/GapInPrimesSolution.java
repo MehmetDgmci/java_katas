@@ -8,7 +8,7 @@ public class GapInPrimesSolution {
             if (isPrime(i) && (prime1 != prime2)) {
                 prime1 = prime2;
                 prime2 = i;
-                if (isPrime(prime2 + g) && prime2 + g <= n && isNextPrime(prime2, prime2 +g)) {
+                if (isPrime(prime2 + g) && prime2 + g <= n && isNextPrime(prime2, prime2 + g)) {
                     return new long[]{prime2, prime2 + g};
                 }
             }
